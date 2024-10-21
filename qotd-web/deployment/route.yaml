@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: qotd
+  namespace: qotd
+  labels:
+    app: qotd
+    tier: web
+spec:
+  to:
+    kind: Service
+    name: qotd
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None
