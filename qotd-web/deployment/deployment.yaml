@@ -19,7 +19,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: qotd
-          image: image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/qotd:latest
+          image: image-registry.openshift-image-registry.svc:5000/qotd/qotd:latest
           imagePullPolicy: Always
           ports:
             - name: http
