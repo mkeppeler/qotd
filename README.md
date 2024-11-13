@@ -29,23 +29,93 @@ The image refer in the [kube yaml](qotd-web/deployment/all-in-one.yaml) is hardc
 
 ```topojson
 {
-  "type": "Topology",
-  "transform": {
-    "scale": [0.0005000500050005, 0.00010001000100010001],
-    "translate": [100, 0]
-  },
-  "objects": {
-    "example": {
-      "type": "GeometryCollection",
-      "geometries": [
-        {
-          "type": "Point",
-          "properties": {"prop0": "value0"},
-          "coordinates": [4000, 5000]
-        }
-      ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          9.243985960032774,
+          48.75279728986783
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "datacenter_name": "DAL10",
+        "marker-color": "#004cff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "street": "1950 North Stemmons Freeway",
+        "city": "Dallas",
+        "state": "TX",
+        "country": "USA"
+      },
+      "geometry": {
+        "coordinates": [
+          -96.81951700000037,
+          32.80098415454442
+        ],
+        "type": "Point"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "datacenter_name": "FRA02",
+        "marker-color": "#004cff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "street": "Heinrich-Lanz-Allee 47",
+        "city": "Frankfurt",
+        "state": "Hessen",
+        "country": "DE"
+      },
+      "geometry": {
+        "coordinates": [
+          8.640214246723076,
+          50.195612447199665
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "street": "20 York Rd, London SE1 7ND, United Kingdom"
+      },
+      "geometry": {
+        "coordinates": [
+          -0.11579976240258816,
+          51.50333977815592
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "datacenter_name": "TOK04",
+        "marker-color": "#004cff",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "street": "19-21 Nihonbashi-Hakozakichō, Chuo City",
+        "city": "Tokyo",
+        "state": "",
+        "country": "JP"
+      },
+      "geometry": {
+        "coordinates": [
+          139.78708340276722,
+          35.678566628771435
+        ],
+        "type": "Point"
+      }
     }
-  },
-  "arcs": [[[4000, 0], [1999, 9999], [2000, -9999], [2000, 9999]],[[0, 0], [0, 9999], [2000, 0], [0, -9999], [-2000, 0]]]
+  ]
 }
 ```
